@@ -54,6 +54,7 @@ const initialPeers = process.env.PEERS ? process.env.PEERS.split(",") : []
 const http_port = process.env.HTTP_PORT || 3001
 const p2p_port = process.env.P2P_PORT || 6001
 
+naiveChain.connectToPeers(initialPeers)
 naiveChain.initHttpServer(blockchain, sockets, MessageType, http_port)
 naiveChain.initP2PServer(blockchain, sockets, MessageType, p2p_port)
 
