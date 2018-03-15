@@ -240,4 +240,4 @@ const getGenesisBlock = data =>  new Block(0,"0",1465154705, data,
 )
 
     
-module.exports = { initHttpServer, initP2PServer, getGenesisBlock }
+module.exports = { initHttpServer, initP2PServer,connectToPeers, getGenesisBlock }
